@@ -1,24 +1,26 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // Get all coffee
+  app.get("/api/coffee", function(req, res) {
+    db.Coffee.findAll({}).then(function(dbCoffee) {
+      res.json(dbCoffee);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Create a new Coffee
+  app.post("/api/coffee", function(req, res) {
+    db.Coffee.create(req.body).then(function(dbCoffee) {
+      res.json(dbCoffee);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete an Coffee by id
+  app.delete("/api/coffee/:id", function(req, res) {
+    db.Coffee.destroy({ where: { id: req.params.id } }).then(function(
+      dbCoffee
+    ) {
+      res.json(dbCoffee);
     });
   });
 };
