@@ -12,13 +12,13 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/Coffees",
+      url: "api/coffees",
       data: JSON.stringify(coffee)
     });
   },
   getCoffees: function() {
     return $.ajax({
-      url: "api/l Coffees",
+      url: "api/coffees",
       type: "GET"
     });
   },
