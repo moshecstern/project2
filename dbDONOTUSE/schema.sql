@@ -11,7 +11,6 @@ CREATE TABLE coffee
     flavor varchar(255) NOT NULL,
     company varchar(250),
     caf BOOLEAN DEFAULT true,
-	department varchar(250) NOT NULL,
 	PRIMARY KEY (coffeeid)
 );
 
@@ -27,8 +26,8 @@ CREATE TABLE user
 --     caf BOOLEAN DEFAULT true,
 -- 	department varchar(255),
 	coffeeid int,
-    FOREIGN KEY (coffeeId)
-    REFERENCES coffee(coffeeId),
+    FOREIGN KEY (coffeeid)
+    REFERENCES coffee(coffeeid),
 	PRIMARY KEY (userid)
 );
 
