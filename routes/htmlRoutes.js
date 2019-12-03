@@ -27,3 +27,9 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
+// var exports = (module.exports = {});
+
+// exports.signup = function(req, res) {
+//   res.render("signup");
+// };
