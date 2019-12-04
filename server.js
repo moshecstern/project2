@@ -38,7 +38,8 @@ app.set("view engine", "handlebars");
 
 // Passport stuff
 app.get("/", function(req, res) {
-  res.send("Welcome to Passport with Sequelize");
+  // res.send("Welcome to Passport with Sequelize");
+  res.render("index");
 });
 
 // Routes
