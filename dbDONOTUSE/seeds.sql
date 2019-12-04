@@ -15,13 +15,13 @@
 -- INSERT INTO posts (title, message, userid) VALUES("Hello start", "lets see if this works", 1);
 
 
-USE project2db;
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Double Donut Coffee","Bold", "NA","/images/doubledonutbold.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "West Coast Roast", "Bold", "Guy Fieri","/images/westcoastguyfieri.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "French Toast", "Sweet", "Java Factory Roasters","/images/frenchtoastjava.jpg");
-INSERT INTO Coffees (type, name, flavor, company, caf, img) VALUES("k-cups", "Coconut Caramel-icious", "Sweet", "Crazy Cups", false,"/images/coconutcaramalcrazycups.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Chocolate Marshmallow Swirl", "Sweet", "Friendlys","/images/chocmarshmellowswirlfriendlys.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Mint Chocolate", "Sweet", "Andes","/images/andesmintchocochip.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Dark Roast", "Bold", "Entenmanns","/images/entemensdarkroast.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Rocky Road", "Sweet", "Sundae Coffee","/images/rockyroadsundae.jpg");
-INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Maple Sleigh", "Sweet", "Brooklyn Bean Roastery","/images/maplesleighbrooklyn.jpg");
+-- USE project2db;
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Double Donut Coffee","Bold", "NA","/images/doubledonutbold.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "West Coast Roast", "Bold", "Guy Fieri","/images/westcoastguyfieri.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "French Toast", "Sweet", "Java Factory Roasters","/images/frenchtoastjava.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, caf, img) VALUES("k-cups", "Coconut Caramel-icious", "Sweet", "Crazy Cups", false,"/images/coconutcaramalcrazycups.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Chocolate Marshmallow Swirl", "Sweet", "Friendlys","/images/chocmarshmellowswirlfriendlys.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Mint Chocolate", "Sweet", "Andes","/images/andesmintchocochip.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Dark Roast", "Bold", "Entenmanns","/images/entemensdarkroast.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Rocky Road", "Sweet", "Sundae Coffee","/images/rockyroadsundae.jpg");
+-- INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Maple Sleigh", "Sweet", "Brooklyn Bean Roastery","/images/maplesleighbrooklyn.jpg");
