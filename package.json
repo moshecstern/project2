@@ -30,6 +30,7 @@
     "gulp-uglify": "^3.0.2",
     "merge-stream": "^2.0.0",
     "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.8.6"
   },
@@ -41,7 +42,6 @@
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "mocha": "^6.1.4",
-    "passport": "^0.4.0",
     "prettier": "^1.17.1"
   }
 }
