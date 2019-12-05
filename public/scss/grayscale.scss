@@ -1,12 +1,8 @@
-@import 'variables.scss';
-@import 'mixins.scss';
+
 @import 'navbar.scss';
 @import 'masthead.scss';
 @import 'buttons.scss';
-@import 'about.scss';
-@import 'projects.scss';
-@import 'signup.scss';
-@import 'contact.scss';
+@import 'signup.scss'
 
 body {
   font-family: 'Nunito';
