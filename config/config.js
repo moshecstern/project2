@@ -3,14 +3,14 @@ module.exports = {
   development: {
     username: "root",
     password: process.env.SQL_PASS,
-    database: "coffeeproject",
+    database: "project2db",
     host: "localhost",
     dialect: "mysql"
   },
   test: {
     username: "root",
     password: null,
-    database: "coffeeproject",
+    database: "project2db",
     host: "localhost",
     dialect: "mysql",
     logging: false
