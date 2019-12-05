@@ -8,8 +8,6 @@
                 <br>
                 <br>
                 <br>
-                
-                {{#each coffees}}
                 <!--CAROUSEL START PHOTO SIZES-->
                 <div id="myCarousel" class="carousel slide" data-ride="carousel"
                     style="width: 375px; height:375px; margin: 0 auto">
@@ -17,13 +15,8 @@
 
                         <!--CAROUSEL PHOTO 1-->
                         <div class="carousel-item active">
-                            {{!-- <img class="d-block w-100" src="{{img}}" alt="First slide"> --}}
-                            {{!-- <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide"> --}}
+                            <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide">
                             <br>
-                            <h5>{{this.name}}</h5>
-                            <h5>{{this.company}}</h5>
-                            <h5>{{this.flavor}}</h5>
-
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-success active">
                                     <input type="radio" name="options" id="like1" autocomplete="off" checked>
@@ -35,61 +28,42 @@
                                 </label>
                             </div>
                         </div>
-                        {{/each}}
-
                         <!--CAROUSEL PHOTO 1-->
 
-                        {{!-- <!--CAROUSEL PHOTO 1-->
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide">
-                                <br>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="options" id="like1" autocomplete="off" checked>
-                                            Liked
-                                    </label>
-                                    
-                                    <label class="btn btn-danger">
-                                        <input type="radio" name="options" id="dislike1" autocomplete="off"> Disliked
-                                    </label>
-                                </div>
-                            </div>
-                            <!--CAROUSEL PHOTO 1-->
+                        <!--CAROUSEL PHOTO 2-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://i.ibb.co/hmtxLdn/Ethiopian-Coffee.jpg"
+                                alt="Second slide">
+                            <br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="like2" autocomplete="off" checked>
+                                    Like
+                                </label>
 
-                            <!--CAROUSEL PHOTO 2-->
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="https://i.ibb.co/hmtxLdn/Ethiopian-Coffee.jpg"
-                                    alt="Second slide">
-                                <br>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="options" id="like2" autocomplete="off" checked>
-                                            Like
-                                    </label>
-                                   
-                                    <label class="btn btn-danger">
-                                        <input type="radio" name="options" id="dislike2" autocomplete="off"> Disliked
-                                    </label>
-                                </div>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="dislike2" autocomplete="off"> Disliked
+                                </label>
                             </div>
-                            <!--CAROUSEL PHOTO 2-->
+                        </div>
+                        <!--CAROUSEL PHOTO 2-->
 
-                            <!--CAROUSEL PHOTO 3-->
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="https://i.ibb.co/3NyMQss/kcup2.jpg" alt="Third slide">
-                                <br>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="options" id="like3" autocomplete="off" checked>
-                                            Like
-                                    </label>
-                                    
-                                    <label class="btn btn-danger">
-                                        <input type="radio" name="options" id="dislike3" autocomplete="off"> Dislike
-                                    </label>
-                                </div>
+                        <!--CAROUSEL PHOTO 3-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://i.ibb.co/3NyMQss/kcup2.jpg" alt="Third slide">
+                            <br>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="like3" autocomplete="off" checked>
+                                    Like
+                                </label>
+
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="dislike3" autocomplete="off"> Dislike
+                                </label>
                             </div>
-                            <!--CAROUSEL PHOTO 3--> --}}
+                        </div>
+                        <!--CAROUSEL PHOTO 3-->
 
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -116,6 +90,58 @@
 </div>  --}}
 
 
+<!-- MY PROFILE -->
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <!-- SIDEBAR USERPIC -->
+                <div class="profile-userpic">
+                    <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg"
+                        class="img-responsive" alt="">
+                </div>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <h3>Joseph Schmoseff</h3>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        Welcome Liberty Beans Member
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Your Liked Coffees </a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.com/s?k=coffee&ref=nb_sb_noss_1" target="_blank">
+                                <i class="glyphicon glyphicon-ok"></i>
+                                Amazon Suggestions </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <ul>
+                    <a href="https://young-forest-75020.herokuapp.com/">
+                        <i class="glyphicon glyphicon-user"></i>
+                        Log Out </a>
+                </ul>
+                <!-- END MENU -->
+            </div>
+        </div>
+
+    </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="bg-black small text-center text-white-50">
@@ -132,3 +158,5 @@
 
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
