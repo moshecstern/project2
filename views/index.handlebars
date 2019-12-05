@@ -1,282 +1,83 @@
-{{!-- 
-<!--HEADER -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Liberty Beans</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">We at Liberty Beans distribute the purest and mostrobust beans
-          Mother Earth has to offer. Before you get started log in.</h2>
-        <div class="container">
+<!--HEADER-->
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Liberty Beans</h1>
+      <h2 class="text-white-50 mx-auto mt-2 mb-5">We at Liberty Beans distribute the purest and most robust beans
+        Mother Earth has to offer. Before you get started log in.</h2>
+      <div class="container">
 
-          <!--USER LOGIN MODAL START--->
-          <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
-            Login
-          </button>
-        </div>
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header border-bottom-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+        <!--USER LOGIN MODAL START--->
+        <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+          Login/Sign Up
+        </button>
+      </div>
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-title text-center">
+                <h4>Login</h4>
               </div>
-              <div class="modal-body">
-                <div class="form-title text-center">
-                  <h4>Login</h4>
-                </div>
-                <div class="d-flex flex-column text-center">
-                  <form>
-                    <div class="form-group">
-                      <input type="user" class="form-control" id="userName" placeholder="User Name...">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control" id="passWord" placeholder="Your password...">
-                    </div>
-                    <button type="button" id="userLogin" class="btn btn-info btn-block btn-round">Login</button>
-                  </form>
+<!--END MODAL-->
 
-                  <div class="text-center text-muted delimiter">Not a member yet? No worries!</div>
-                  <div class="d-flex justify-content-center social-buttons">
-                    <div class="modal-footer d-flex justify-content-center">
-                      <div class="signup-section"><a href="#SIGN IN SHEET" class="text-info">
-                          <h1>Sign Up Here</h1>
-                        </a>.</div>
-                    </div>
-                    </div>  <!---->
-                  </div>
-                </div>
+<!--LOG IN AREA-->
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <input type="user" class="form-control" id="userName" placeholder="User Name...">
               </div>
+              <input type="password" class="form-control" id="passWord" placeholder="Your password...">
+            </div>
+            <button type="button" id="userLogin" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+
+            <div class="text-center text-muted delimiter">Not a member yet? No worries!</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="signup-section"><a href="#SIGN IN SHEET" class="text-info">
+                    <h1>Sign Up Here</h1>
+                  </a>.</div>
+              </div>
+              </di>
             </div>
           </div>
-          <!---END USER LOG IN MODAL-->
         </div>
       </div>
-  </header>
-  <!--END HEADER-->
-
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">What Liberty Beans Does Best</h2>
-          <p class="text-white-50">Wordy McWord Words, schmakity yakkity, hub bub blahzay blah blah.</p>
-        </div>
-      </div>
-      <img src="https://i.ibb.co/G25J5NW/coffee-beans-black-266620.jpg" class="img-fluid" alt="beans">
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Coffee Bean Source</h4>
-            <p class="text-black-50 mb-0">Wordy McWord Words, schmakity yakkity, hub bub blahzay blah blah.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="social d-flex justify-content-center">
-    <a href="#" class="mx-2">
-      <i class="fab fa-github" style="font-size:36px"></i>
-    </a>
+    <!---END USER LOG IN MODAL-->
   </div>
-
   </div>
-  </section>
+</header>
+<!--END HEADER-->
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      <h4>
-        Copyright &copy; Liberty Beans - Mustafa Muhammad - Carmel Meyer - Moshe Stern - Keaton Sentek 2019
-      </h4>
-    </div>
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script> --}}
+{{!-- KEEP THIS <div class="social d-flex justify-content-center"></div>
+<a href="#" class="mx-2">
+  <i class="fab fa-github" style="font-size:36px"></i>
+</a>
+</div> --}}
 
 
 
-
-
-
-
-
-
-
-{{!-- <div id="home">
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
   <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="coffee-text">coffee Text</label>
-            <input type="text" id="coffee-text" class="form-control" aria-describedby="coffee-text" placeholder="Enter coffee Text">
-          </div>
-          <div class="form-group">
-            <label for="coffee-description">coffee Description</label>
-            <textarea class="form-control" id="coffee-description" aria-describedby="coffee-description" placeholder="Enter coffee Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>coffees:</h3>
-        <ul id="coffee-list" class="list-group">
-          {{#each coffees}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="coffee/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
+    <h4>
+      Copyright &copy; Liberty Beans - Mustafa Muhammad - Carmel Meyer - Moshe Stern - Keaton Sentak 2019
+    </h4>
   </div>
-</div>
+</footer>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script> --}}
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
-
-<!--HEADER -->
-  <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Liberty Beans</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">We at Liberty Beans distribute the purest and mostrobust beans
-          Mother Earth has to offer. Before you get started log in.</h2>
-        <div class="container">
-
-          <!--USER LOGIN MODAL START--->
-          <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
-            Login
-          </button>
-        </div>
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header border-bottom-0">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-              <div class="modal-body">
-                <div class="form-title text-center">
-                  <h4>Login</h4>
-                </div>
-                <div class="d-flex flex-column text-center">
-                  <form id="signin" name="signin" method="post" action="/signin">
-                    <div class="form-group">
-                      <input type="text" name="username" class="form-control" id="userName" placeholder="User Name...">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" name="password" class="form-control" id="passWord" placeholder="Your password...">
-                    </div>
-                    <button type="submit" id="userLogin" class="btn btn-info btn-block btn-round">Login</button>
-                  </form>
-
-                  <div class="text-center text-muted delimiter">Not a member yet? No worries!</div>
-                  <div class="d-flex justify-content-center social-buttons">
-                    <div class="modal-footer d-flex justify-content-center">
-                      <div class="signup-section"><a href="/signup" class="text-info">
-                          <h1>Sign Up Here</h1>
-                        </a>.</div>
-                    </div>
-                    </div>  <!---->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---END USER LOG IN MODAL-->
-        </div>
-      </div>
-  </header>
-  <!--END HEADER-->
-
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">What Liberty Beans Does Best</h2>
-          <p class="text-white-50">Wordy McWord Words, schmakity yakkity, hub bub blahzay blah blah.</p>
-        </div>
-      </div>
-      <img src="https://i.ibb.co/G25J5NW/coffee-beans-black-266620.jpg" class="img-fluid" alt="beans">
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Coffee Bean Source</h4>
-            <p class="text-black-50 mb-0">Wordy McWord Words, schmakity yakkity, hub bub blahzay blah blah.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="social d-flex justify-content-center">
-    <a href="#" class="mx-2">
-      <i class="fab fa-github" style="font-size:36px"></i>
-    </a>
-  </div>
-
-  </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      <h4>
-        Copyright &copy; Liberty Beans - Mustafa Muhammad - Carmel Meyer - Moshe Stern - Keaton Sentak 2019
-      </h4>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/grayscale.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
