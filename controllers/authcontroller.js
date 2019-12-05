@@ -1,3 +1,4 @@
+var db = require("../models");
 var exports = (module.exports = {});
 
 exports.signup = function(req, res) {
@@ -9,7 +10,11 @@ exports.signin = function(req, res) {
 };
 
 exports.dashboard = function(req, res) {
-  res.render("dashboard");
+  db.Coffee.findAll({}).then(function(dbCoffees) {
+    res.render("dashboard", {
+      coffees: dbCoffees
+    });
+  });
 };
 
 exports.logout = function(req, res) {

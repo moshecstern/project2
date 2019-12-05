@@ -7,20 +7,4 @@ module.exports = function(app) {
       res.json(dbCoffee);
     });
   });
-
-  // Create a new Coffee
-  app.post("/api/coffee", function(req, res) {
-    db.Coffee.create(req.body).then(function(dbCoffee) {
-      res.json(dbCoffee);
-    });
-  });
-
-  // Delete an Coffee by id
-  app.delete("/api/coffee/:id", function(req, res) {
-    db.Coffee.destroy({ where: { id: req.params.id } }).then(function(
-      dbCoffee
-    ) {
-      res.json(dbCoffee);
-    });
-  });
 };
