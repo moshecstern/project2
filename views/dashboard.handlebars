@@ -1,20 +1,45 @@
 <!--HEADER -->
-    <header class="masthead">
-        <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Our Coffees</h1>
-                <div class="container">
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Our Coffees</h1>
+            <div class="container">
 
-                    <br>
-                    <br>
-                    <br>
+                <br>
+                <br>
+                <br>
+                
+                {{#each coffees}}
+                <!--CAROUSEL START PHOTO SIZES-->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel"
+                    style="width: 375px; height:375px; margin: 0 auto">
+                    <div class="carousel-inner">
 
-                    <!--CAROUSEL START PHOTO SIZES-->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel"
-                        style="width: 375px; height:375px; margin: 0 auto">
-                        <div class="carousel-inner">
+                        <!--CAROUSEL PHOTO 1-->
+                        <div class="carousel-item active">
+                            {{!-- <img class="d-block w-100" src="{{img}}" alt="First slide"> --}}
+                            {{!-- <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide"> --}}
+                            <br>
+                            <h5>{{this.name}}</h5>
+                            <h5>{{this.company}}</h5>
+                            <h5>{{this.flavor}}</h5>
 
-                            <!--CAROUSEL PHOTO 1-->
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="like1" autocomplete="off" checked>
+                                    Liked
+                                </label>
+
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="dislike1" autocomplete="off"> Disliked
+                                </label>
+                            </div>
+                        </div>
+                        {{/each}}
+
+                        <!--CAROUSEL PHOTO 1-->
+
+                        {{!-- <!--CAROUSEL PHOTO 1-->
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide">
                                 <br>
@@ -64,24 +89,24 @@
                                     </label>
                                 </div>
                             </div>
-                            <!--CAROUSEL PHOTO 3-->
+                            <!--CAROUSEL PHOTO 3--> --}}
 
-                        </div>
-                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
-                    <!--END CAROUSEL-->
-
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+                <!--END CAROUSEL-->
+
             </div>
-    </header>
-    <!--END HEADER-->
+        </div>
+</header>
+<!--END HEADER-->
 
 
 {{!-- KEEP THIS <div class="social d-flex justify-content-center"></div>

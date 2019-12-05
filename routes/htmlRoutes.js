@@ -12,9 +12,9 @@ module.exports = function(app) {
   });
 
   // Load coffee page and pass in an coffee by id
-  app.get("/coffee/:id", function(req, res) {
+  app.get("/coffee/:coffeeid", function(req, res) {
     db.Coffee.findOne({
-      where: { id: req.params.id }
+      where: { coffeeid: req.params.coffeeid }
     }).then(function(dbCoffee) {
       res.render("coffee", {
         coffee: dbCoffee
