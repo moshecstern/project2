@@ -1,19 +1,77 @@
-{{!-- <!DOCTYPE html>
-<html>
+<!--HEADER -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Liberty Beans</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">We at Liberty Beans distribute the purest and mostrobust beans
+          Mother Earth has to offer. Before you get started please create an account.</h2>
+        <div class="container">
 
-<head>
-    <title></title>
-</head>
+          <!--USER LOGIN MODAL START--->
+          <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+            Sign Up
+          </button>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
 
-<body>
-    <form id="signup" name="signup" method="post" action="/signup">
-        <label for="username">Username</label>
-        <input name="username" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign Up" />
-    </form>
+              <div class="modal-body">
+                <div class="form-title text-center">
+                  <h4>Sign Up</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form id="signup" name="signup" method="post" action="/signup">
+                    <div class="form-group">
+                      <input type="text" name="username" class="form-control" id="userName" placeholder="User Name...">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="password" class="form-control" id="passWord" placeholder="Your password...">
+                    </div>
+                    <button type="submit" id="userLogin" class="btn btn-info btn-block btn-round">Sign Up</button>
+                  </form>  <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---END USER LOG IN MODAL-->
+        </div>
+      </div>
+  </header>
+  <!--END HEADER-->
 
-</body>
 
-</html> --}}
+  <div class="social d-flex justify-content-center">
+    <a href="#" class="mx-2">
+      <i class="fab fa-github" style="font-size:36px"></i>
+    </a>
+  </div>
+
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      <h4>
+        Copyright &copy; Liberty Beans - Mustafa Muhammad - Carmel Meyer - Moshe Stern - Keaton Sentak 2019
+      </h4>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>

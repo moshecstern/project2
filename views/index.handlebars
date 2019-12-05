@@ -1,4 +1,4 @@
-<!--HEADER -->
+<!--HEADER-->
 <header class="masthead">
   <div class="container d-flex h-100 align-items-center">
     <div class="mx-auto text-center">
@@ -25,33 +25,35 @@
               <div class="form-title text-center">
                 <h4>Login</h4>
               </div>
-              <div class="d-flex flex-column text-center">
-                <form>
-                  <div class="form-group">
-                    <input type="user" class="form-control" id="userName" placeholder="User Name...">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="passWord" placeholder="Your password...">
-                  </div>
-                  <button type="button" id="userLogin" class="btn btn-info btn-block btn-round">Login</button>
-                </form>
+<!--END MODAL-->
 
-                <div class="text-center text-muted delimiter">Not a member yet? No worries!</div>
-                <div class="d-flex justify-content-center social-buttons">
-                  <div class="modal-footer d-flex justify-content-center">
-                    <div class="signup-section"><a href="#SIGN IN SHEET" class="text-info">
-                        <h1>Sign Up Here</h1>
-                      </a>.</div>
-                  </div>
-                  </di>
-                </div>
+<!--LOG IN AREA-->
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <input type="user" class="form-control" id="userName" placeholder="User Name...">
               </div>
+              <input type="password" class="form-control" id="passWord" placeholder="Your password...">
+            </div>
+            <button type="button" id="userLogin" class="btn btn-info btn-block btn-round">Login</button>
+            </form>
+
+            <div class="text-center text-muted delimiter">Not a member yet? No worries!</div>
+            <div class="d-flex justify-content-center social-buttons">
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="signup-section"><a href="#SIGN IN SHEET" class="text-info">
+                    <h1>Sign Up Here</h1>
+                  </a>.</div>
+              </div>
+              </di>
             </div>
           </div>
         </div>
-        <!---END USER LOG IN MODAL-->
       </div>
     </div>
+    <!---END USER LOG IN MODAL-->
+  </div>
+  </div>
 </header>
 <!--END HEADER-->
 
@@ -79,49 +81,3 @@
 
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/grayscale.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-{{!-- <div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="coffee-text">coffee Text</label>
-            <input type="text" id="coffee-text" class="form-control" aria-describedby="coffee-text" placeholder="Enter coffee Text">
-          </div>
-          <div class="form-group">
-            <label for="coffee-description">coffee Description</label>
-            <textarea class="form-control" id="coffee-description" aria-describedby="coffee-description" placeholder="Enter coffee Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>coffees:</h3>
-        <ul id="coffee-list" class="list-group">
-          {{#each coffees}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="coffee/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script> --}}
