@@ -10,7 +10,7 @@ exports.signin = function(req, res) {
 };
 
 exports.dashboard = function(req, res) {
-  db.Coffee.findAll({}).then(function(dbCoffees) {
+  db.Coffee.findAll({ limit: 10 }).then(function(dbCoffees) {
     res.render("dashboard", {
       coffees: dbCoffees
     });
