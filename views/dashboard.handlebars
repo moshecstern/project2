@@ -142,6 +142,37 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        {{#each coffees}}
+        <div class="col-sm-3">
+            <div class="card h-250">
+                <img style="height: 200px;" class="card-img-top" src="{{this.img}}" alt="Coffee Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.company}}</p>
+                    <p class="card-text">Type: {{this.flavor}}</p>
+                    <p class="card-text">Caffinated: {{this.caf}}</p>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-success ">
+                            <input type="radio" name="options" id="like2" data-id="{{id}}" value="true" data-newrating="{{like}}"
+                                autocomplete="off" checked>
+                            Like
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="radio" name="options" id="dislike2" data-id="{{id}}" value="false" data-newrating="{{like}}"
+                                autocomplete="off"> Disliked
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="bg-black small text-center text-white-50">
@@ -160,3 +191,19 @@
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/grayscale.min.js"></script>
+
+{{!-- <div class="row">
+                    <div class="col-sm-3">
+                        {{#each coffees}}
+                        <div class="card">
+                            <img class="card-img-top" src="{{this.img}}" alt="Coffee Image">
+                            <div class="card-body">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                <p class="card-text">Company: {{this.company}}</p>
+                                <p class="card-text">Type: {{this.flavor}}</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div> --}}
