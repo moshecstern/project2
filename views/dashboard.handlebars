@@ -72,6 +72,38 @@
                     <h3 class="text-black-20 mx-auto mt-2 mb-0">Likes</h3>
 
                 </div>
+                <!-- END SIDEBAR USERPIC -->
+                <!-- SIDEBAR USER TITLE -->
+                <div class="profile-usertitle">
+                    <div class="profile-usertitle-name">
+                        <h3>Joseph Schmoseff</h3>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        Welcome Liberty Beans Member
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-home"></i>
+                                Your Liked Coffees </a>
+                        </li>
+                        {{#each relations.relation}}
+                        <div class="likedlist">
+
+                            <h4>{{name}}</h4>
+                        </div>
+                        {{/each}}
+                        <li>
+                            <a href="https://www.amazon.com/s?k=coffee&ref=nb_sb_noss_1" target="_blank">
+                                <i class="glyphicon glyphicon-ok"></i>
+                                Amazon Suggestions </a>
+                        </li>
+                    </ul>
                 <div class="card-body">
                     <p>Double Donut Cofffee
                     </p>
