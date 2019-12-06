@@ -17,16 +17,6 @@
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="https://i.ibb.co/BGZN8Kw/kcup.jpg" alt="First slide">
                             <br>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                    <input type="radio" name="options" id="like1" autocomplete="off" checked>
-                                    Liked
-                                </label>
-
-                                <label class="btn btn-danger">
-                                    <input type="radio" name="options" id="dislike1" autocomplete="off"> Disliked
-                                </label>
-                            </div>
                         </div>
                         <!--CAROUSEL PHOTO 1-->
 
@@ -35,16 +25,6 @@
                             <img class="d-block w-100" src="https://i.ibb.co/hmtxLdn/Ethiopian-Coffee.jpg"
                                 alt="Second slide">
                             <br>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                    <input type="radio" name="options" id="like2" autocomplete="off" checked>
-                                    Like
-                                </label>
-
-                                <label class="btn btn-danger">
-                                    <input type="radio" name="options" id="dislike2" autocomplete="off"> Disliked
-                                </label>
-                            </div>
                         </div>
                         <!--CAROUSEL PHOTO 2-->
 
@@ -52,16 +32,6 @@
                         <div class="carousel-item">
                             <img class="d-block w-100" src="https://i.ibb.co/3NyMQss/kcup2.jpg" alt="Third slide">
                             <br>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                    <input type="radio" name="options" id="like3" autocomplete="off" checked>
-                                    Like
-                                </label>
-
-                                <label class="btn btn-danger">
-                                    <input type="radio" name="options" id="dislike3" autocomplete="off"> Dislike
-                                </label>
-                            </div>
                         </div>
                         <!--CAROUSEL PHOTO 3-->
 
@@ -80,72 +50,54 @@
             </div>
         </div>
 </header>
-<!--END HEADER-->
 
-
-{{!-- KEEP THIS <div class="social d-flex justify-content-center"></div>
-<a href="#" class="mx-2">
-  <i class="fab fa-github" style="font-size:36px"></i>
-</a>
-</div>  --}}
-
+<hr>
 
 <!-- MY PROFILE -->
-<div class="container">
-    <div class="row profile">
-        <div class="col-md-3">
-            <div class="profile-sidebar">
-                <!-- SIDEBAR USERPIC -->
-                <div class="profile-userpic">
-                    <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg"
-                        class="img-responsive" alt="">
-                </div>
-                <!-- END SIDEBAR USERPIC -->
-                <!-- SIDEBAR USER TITLE -->
-                <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">
-                        <h3>Joseph Schmoseff</h3>
-                    </div>
-                    <div class="profile-usertitle-job">
-                        Welcome Liberty Beans Member
-                    </div>
-                </div>
-                <!-- END SIDEBAR USER TITLE -->
+<div class="containter-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3 class="text-black-20 mx-auto mt-2 mb-3">User Profile</h3>
+            <h5 class="text-black-20 mx-auto mt-2 mb-0">Welcome Liberty</h5>
+            <h5 class="text-black-20 mx-auto mt-2 mb-5">Beans Member</h5>
 
-                <!-- SIDEBAR MENU -->
-                <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="#">
-                                <i class="glyphicon glyphicon-home"></i>
-                                Your Liked Coffees </a>
-                        </li>
-                        <li>
-                            <a href="https://www.amazon.com/s?k=coffee&ref=nb_sb_noss_1" target="_blank">
-                                <i class="glyphicon glyphicon-ok"></i>
-                                Amazon Suggestions </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <hr>
-
-                <ul>
-                    <a href="https://young-forest-75020.herokuapp.com/">
-                        <i class="glyphicon glyphicon-user"></i>
-                        Log Out </a>
-                </ul>
-                <!-- END MENU -->
-            </div>
+            <a href="https://young-forest-75020.herokuapp.com/">
+                <i class="glyphicon glyphicon-user"></i>
+                Log Out </a>
         </div>
 
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-black-20 mx-auto mt-2 mb-0">Likes</h3>
+
+                </div>
+                <div class="card-body">
+                    <p>Double Donut Cofffee
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-black-20 mx-auto mt-2 mb-0">Disikes</h3>
+
+                </div>
+                <div class="card-body">
+                    <p>Random Coffee</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<hr>
+<br>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         {{#each coffees}}
-        <div class="col-sm-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="card h-250">
                 <img style="height: 200px;" class="card-img-top" src="{{this.img}}" alt="Coffee Image">
                 <div class="card-body">
@@ -153,18 +105,14 @@
                     <p class="card-text">{{this.company}}</p>
                     <p class="card-text">Type: {{this.flavor}}</p>
                     <p class="card-text">Caffinated: {{this.caf}}</p>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-success ">
-                            <input type="radio" name="options" id="like2" data-id="{{id}}" value="true" data-newrating="{{like}}"
-                                autocomplete="off" checked>
-                            Like
-                        </label>
-                        <label class="btn btn-danger">
-                            <input type="radio" name="options" id="dislike2" data-id="{{id}}" value="false" data-newrating="{{like}}"
-                                autocomplete="off"> Disliked
-                        </label>
-                    </div>
 
+                    <center>
+                        <button type="button" class="btn btn-success like" data-id="{{id}}" value="true"
+                            data-newrating="{{like}}">Like</button>
+<hr>
+                        <button type="button" class="btn btn-danger dislike" data-id="{{id}}" value="false"
+                            data-newrating="{{like}}">Dislike</button>
+                    </center>
                 </div>
             </div>
         </div>
@@ -173,10 +121,14 @@
     </div>
 </div>
 
-
 <!-- Footer -->
 <footer class="bg-black small text-center text-white-50">
     <div class="container">
+        <div class="social d-flex justify-content-center">
+            <a href="#" class="mx-2">
+                <i class="fab fa-github" style="font-size:36px"></i>
+            </a>
+        </div>
         <h4>
             Copyright &copy; Liberty Beans - Mustafa Muhammad - Carmel Meyer - Moshe Stern - Keaton Sentak 2019
         </h4>
@@ -191,19 +143,3 @@
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/grayscale.min.js"></script>
-
-{{!-- <div class="row">
-                    <div class="col-sm-3">
-                        {{#each coffees}}
-                        <div class="card">
-                            <img class="card-img-top" src="{{this.img}}" alt="Coffee Image">
-                            <div class="card-body">
-                                <h5 class="card-title">{{this.name}}</h5>
-                                <p class="card-text">Company: {{this.company}}</p>
-                                <p class="card-text">Type: {{this.flavor}}</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        {{/each}}
-                    </div>
-                </div> --}}
