@@ -9,11 +9,14 @@ exports.signin = function(req, res) {
   res.render("signin");
 };
 
+// eslint-disable-next-line no-unused-vars
 exports.dashboard = function(req, res) {
-  db.Coffee.findAll({ limit: 10 }).then(function(dbCoffees) {
+  db.Coffee.findAll({}).then(function(dbCoffees) {
+      dbCoffees.sort(() => Math.random() - 0.5);
+      var slicedCoffees = dbCoffees.slice(0, 12)
     res.render("dashboard", {
-      coffees: dbCoffees
-    });
+    coffees: slicedCoffees
+      });
   });
 };
 
