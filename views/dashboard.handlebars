@@ -120,6 +120,12 @@
                                 <i class="glyphicon glyphicon-home"></i>
                                 Your Liked Coffees </a>
                         </li>
+                        {{#each relations.relation}}
+                        <div class="likedlist">
+
+                            <h4>{{name}}</h4>
+                        </div>
+                        {{/each}}
                         <li>
                             <a href="https://www.amazon.com/s?k=coffee&ref=nb_sb_noss_1" target="_blank">
                                 <i class="glyphicon glyphicon-ok"></i>
@@ -154,13 +160,13 @@
                     <p class="card-text">Type: {{this.flavor}}</p>
                     <p class="card-text">Caffinated: {{this.caf}}</p>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-success ">
-                            <input type="radio" name="options" id="like2" data-id="{{id}}" value="true" data-newrating="{{like}}"
+                        <label class="btn btn-success like2">
+                            <input type="radio" name="options" data-id="{{id}}" value="true" data-newrating="{{like}}"
                                 autocomplete="off" checked>
                             Like
                         </label>
-                        <label class="btn btn-danger">
-                            <input type="radio" name="options" id="dislike2" data-id="{{id}}" value="false" data-newrating="{{like}}"
+                        <label class="btn btn-danger like2">
+                            <input type="radio" name="options" data-id="{{id}}" value="false" data-newrating="{{like}}"
                                 autocomplete="off"> Disliked
                         </label>
                     </div>
@@ -191,6 +197,7 @@
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/grayscale.min.js"></script>
+<script src="js/index.js"></script>
 
 {{!-- <div class="row">
                     <div class="col-sm-3">
