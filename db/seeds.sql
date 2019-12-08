@@ -1,11 +1,5 @@
--- USE project2db;
-
--- INSERT INTO user (username, rating, coffeeid) VALUES("Moshe Stern", 7, 1);
-
--- INSERT INTO posts (title, message, userid) VALUES("Hello start", "lets see if this works", 1);
-
-
 USE project2db;
+
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Double Donut Coffee","Bold", "NA","/img/doubledonutbold.jpg");
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "West Coast Roast", "Bold", "Guy Fieri","/img/westcoastguyfieri.jpg");
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "French Toast", "Sweet", "Java Factory Roasters","/img/frenchtoastjava.jpg");
@@ -34,11 +28,6 @@ INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Origina
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Mint Chocolate Chip", "Sweet", "Sundae Coffee","/img/mintchocolatechipsundae.jpg");
 --  rating 9   Coney Island Caramel, Sweet, Brooklyn Bean Roastery, coneyislandcaramelbrooklyn.jpg
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Coney Island Caramel", "Sweet", "Brooklyn Bean Roastery","/img/coneyislandcaramelbrooklyn.jpg");
-
--- 
-
-
-
 --  rating 9    Cookies'n Cream, Sweet, Friendlys, cookiesandcreamfreindlys.jpg
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Cookies'n Cream", "Sweet", "Friendlys","/img/cookiesandcreamfreindlys.jpg");
 -- rating 8     French Roast, Dark Roast, Timothys, frenchroasttimothys.jpg
@@ -173,8 +162,3 @@ INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Bold-In
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Ethiopian", "Bold", "Martinson","/img/noimagecoffee.jpg");
 --              Sumatran, Bold, Martinson, noimagecoffee.jpg
 INSERT INTO Coffees (type, name, flavor, company, img) VALUES("k-cups", "Sumatran", "Bold", "Martinson","/img/noimagecoffee.jpg");
-
-
-
-
--- maybe 3 options for rating: dislike 0, like 1, favs 2

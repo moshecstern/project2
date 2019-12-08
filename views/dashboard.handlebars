@@ -56,68 +56,31 @@
 <!-- MY PROFILE -->
 <div class="containter-fluid">
     <div class="row">
-        <div class="col-sm-4">
-            <h3 class="text-black-20 mx-auto mt-2 mb-3">User Profile</h3>
-            <h5 class="text-black-20 mx-auto mt-2 mb-0">Welcome Liberty</h5>
-            <h5 class="text-black-20 mx-auto mt-2 mb-5">Beans Member</h5>
+        <div class="col-sm-4 text-center">
+            <div class="card">
+                <div class="card-header">
+            <h3 class="text-black-20 mx-auto mt-2 mb-0">User Profile</h3>
+            </div>
+            <p>Welcome,</p>
+            <p>Liberty Beans Member</p>
 
             <a href="/logout">
                 <i class="glyphicon glyphicon-user"></i>
                 Log Out </a>
         </div>
-
-        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-black-20 mx-auto mt-2 mb-0">Likes</h3>
-
-                </div>
-                <!-- END SIDEBAR USERPIC -->
-                <!-- SIDEBAR USER TITLE -->
-                <div class="profile-usertitle">
-                    <div class="profile-usertitle-name">
-                        <h3>Joseph Schmoseff</h3>
-                    </div>
-                    <div class="profile-usertitle-job">
-                        Welcome Liberty Beans Member
-                    </div>
-                </div>
-                <!-- END SIDEBAR USER TITLE -->
-
-                <!-- SIDEBAR MENU -->
-                <div class="profile-usermenu">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="#">
-                                <i class="glyphicon glyphicon-home"></i>
-                                Your Liked Coffees </a>
-                        </li>
-                        {{#each relations.relation}}
-                        <div class="likedlist">
-
-                            <h4>{{name}}</h4>
-                        </div>
-                        {{/each}}
-                        <li>
-                            <a href="https://www.amazon.com/s?k=coffee&ref=nb_sb_noss_1" target="_blank">
-                                <i class="glyphicon glyphicon-ok"></i>
-                                Amazon Suggestions </a>
-                        </li>
-                    </ul>
-                <div class="card-body">
-                    <p>Double Donut Cofffee
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-black-20 mx-auto mt-2 mb-0">Disikes</h3>
-
                 </div>
                 <div class="card-body">
-                    <p>Random Coffee</p>
+                    {{#each relations.relation}}
+                    <div class="likedlist">
+
+                        <p>{{name}}</p>
+                    </div>
+                    {{/each}}
                 </div>
             </div>
         </div>
@@ -139,11 +102,8 @@
                     <p class="card-text">Caffinated: {{this.caf}}</p>
 
                     <center>
-                        <button type="button" class="btn btn-success like" data-id="{{id}}" value="true"
-                            data-newrating="{{like}}">Like</button>
-<hr>
-                        <button type="button" class="btn btn-danger dislike" data-id="{{id}}" value="false"
-                            data-newrating="{{like}}">Dislike</button>
+                        <button type="button" class="btn btn-success like2" data-id="{{id}}" value="true"
+                            data-newrating="{{liked}}">Like</button>
                     </center>
                 </div>
             </div>
@@ -174,4 +134,6 @@
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/grayscale.min.js"></script>
+<script src="js/index.js"></script>
