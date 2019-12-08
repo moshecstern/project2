@@ -35,8 +35,11 @@ exports.dashboard = function(req, res) {
   var newCoffees = {};
   var userlikelist = [];
 
-  db.Coffee.findAll({ limit: 10 }).then(function(dbCoffees) {
-    newCoffees = dbCoffees;
+  db.Coffee.findAll({})
+    .then(function(dbCoffees) {
+      dbCoffees.sort(() => Math.random() - 0.5);
+      var slicedCoffees = dbCoffees.slice(0, 12);
+      newCoffees = slicedCoffees;
   });
 
   db.Relation.findAll({
@@ -45,22 +48,27 @@ exports.dashboard = function(req, res) {
       liked: true
     }
   }).then(function(dbrelation) {
-    // if (dbrelation.length === 0) {
-    //   db.user
-    //     .findOne({
-    //       where: {
-    //         id: req.user.id
-    //       }
-    //     })
-    //     .then(function() {
-    //       var hbsObject = {
-    //         coffees: [],
-    //         user: req.user.id,
-    //         username: dbuser.username
-    //       };
-    //       res.render("dashboard", hbsObject);
-    //     });
-    // } else {
+    if (dbrelation.length === 0) {
+      db.user
+        .findOne({
+          where: {
+            id: req.user.id
+          }
+        })
+        .then(function(dbuser) {
+          var hbsObject = {
+            coffees: [],
+            user: req.user.id,
+            username: dbuser.username
+          };
+          var ourresponse1 = {
+            coffees: newCoffees,
+            relations: hbsObject
+          }
+
+          res.render("dashboard", ourresponse1);
+        });
+    } else {
     findCoffees(userlikelist, dbrelation, function(userlikelist) {
       db.user
         .findOne({
@@ -85,17 +93,10 @@ exports.dashboard = function(req, res) {
           res.render("dashboard", ourresponse);
         });
     });
-  })};
-// eslint-disable-next-line no-unused-vars
-// exports.dashboard = function(req, res) {
-//   db.Coffee.findAll({}).then(function(dbCoffees) {
-//       dbCoffees.sort(() => Math.random() - 0.5);
-//       var slicedCoffees = dbCoffees.slice(0, 12)
-//     res.render("dashboard", {
-//     coffees: slicedCoffees
-//       });
-//   });
-// };
+  };
+  });
+
+};
 
 exports.logout = function(req, res) {
   req.session.destroy(function() {
