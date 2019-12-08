@@ -1,4 +1,5 @@
-$(".like2").on("click", function() {
+$(".like2").on("click", function(event) {
+  event.preventDefault();
   var id = $(this).data("id");
 
   var stateTrue = $(this).attr("value");
