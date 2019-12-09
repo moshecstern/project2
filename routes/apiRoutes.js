@@ -7,4 +7,22 @@ module.exports = function(app) {
       res.json(dbCoffee);
     });
   });
+
+  app.get("/showrelations", function(req, res) {
+    db.Relation.findAll({}).then(function(dbrelation) {
+      res.json(dbrelation);
+    });
+  });
+
+  app.post("/addrelation", function(req, res) {
+    var newRelation = {
+      userid: req.user.id,
+      coffeeid: req.body.coffeeid,
+      liked: req.body.liked
+    };
+
+    db.Relation.create(newRelation).then(function(dbrelation) {
+      res.json(dbrelation);
+    });
+  });
 };

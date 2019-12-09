@@ -107,36 +107,31 @@
 <!-- MY PROFILE -->
 <div class="containter-fluid">
     <div class="row">
-        <div class="col-sm-4">
-            <h3 class="text-black-20 mx-auto mt-2 mb-3">User Profile</h3>
-            <h5 class="text-black-20 mx-auto mt-2 mb-0">Welcome Liberty</h5>
-            <h5 class="text-black-20 mx-auto mt-2 mb-5">Beans Member</h5>
+        <div class="col-sm-4 text-center">
+            <div class="card">
+                <div class="card-header">
+            <h3 class="text-black-20 mx-auto mt-2 mb-0">User Profile</h3>
+            </div>
+            <p>Welcome,</p>
+            <p>Liberty Beans Member</p>
 
             <a href="/logout">
                 <i class="glyphicon glyphicon-user"></i>
                 Log Out </a>
         </div>
-
-        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-black-20 mx-auto mt-2 mb-0">Likes</h3>
-
                 </div>
                 <div class="card-body">
-                    <p>Double Donut Cofffee
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="text-black-20 mx-auto mt-2 mb-0">Disikes</h3>
+                    {{#each relations.relation}}
+                    <div class="likedlist">
 
-                </div>
-                <div class="card-body">
-                    <p>Random Coffee</p>
+                        <p>{{name}}</p>
+                    </div>
+                    {{/each}}
                 </div>
             </div>
         </div>
@@ -158,11 +153,16 @@
                     <p class="card-text">Caffinated: {{this.caf}}</p>
 
                     <center>
+<<<<<<< HEAD
                         <button type="button" class="btn btn-success like" data-id="{{id}}" value="true"
                             data-newrating="{{like}}">Like</button>
 
                         <button type="button" class="btn btn-danger dislike" data-id="{{id}}" value="false"
                             data-newrating="{{like}}">Dislike</button>
+=======
+                        <button type="button" class="btn btn-success like2" data-id="{{id}}" value="true"
+                            data-newrating="{{liked}}">Like</button>
+>>>>>>> eeb50848f97e4394ede79c3fca8bb8c4eca03a4d
                     </center>
                 </div>
             </div>
@@ -180,4 +180,6 @@
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/grayscale.min.js"></script>
+<script src="js/index.js"></script>
